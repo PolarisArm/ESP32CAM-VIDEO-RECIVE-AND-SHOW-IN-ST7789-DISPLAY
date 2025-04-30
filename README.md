@@ -11,10 +11,12 @@ Sending video from esp32 cam and showing the video frame in st7789 display conne
 As I am using ST7789 display, I had to change settings inside TFT_eSPI lib.
 
 In User_Setup.h file inside TFT_eSPI lib, comment default ILI9341 driver and uncomment ST7789 driver.<br>
-[!Image](asset/driverUnc.png)
+![!Image](asset/driverUnc.png)
 <br>
 Second, Uncomment the width and height for the tft display. For me it was 240X240 <br>
-[!Image](asset/wH.png)
+
+![!Image](asset/wH.png)
+
 <br>
 Third we had to uncomment the ESP32 connection for ST7789 Display:<br>
 As per lib My connections are
@@ -26,7 +28,7 @@ As per lib My connections are
 	TFT_DC    2  // Data Command control pin
 	TFT_RST   4  // Reset pin (could connect to RST pin)
 ```
-[!Image](asset/pin.png)
+![!Image](asset/pin.png)
 
 <br>
 
@@ -229,5 +231,6 @@ Calculating the frame speed. Total frame transfer time from Esp32cam to this Esp
 ```
 
 # Project Image
-[!Image](asset/VideoOfDisplay.gif)
+![Image](asset/DispImg.jpg)
+![!Image](asset/VideoOfDisplay.gif)
 
